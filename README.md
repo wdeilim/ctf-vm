@@ -5,7 +5,7 @@ An Ubuntu 16.04 x64 VM for binary exploitation and reversing CTF problems. For a
 ## Installation
 
 ```
-git clone git@github.com:gsingh93/ctf-vm.git
+git clone git@github.com:wdeilim/ctf-vm.git
 cd ctf-vm
 vagrant up
 ```
@@ -24,3 +24,4 @@ Included packages
 - xrop
 - QEMU with ARM support
 - angr
+- zsh
