@@ -118,6 +118,10 @@ install_qemu() {
     /vagrant/setup_qemu_arm.sh
 }
 
+install_zsh() {
+    /vagrant/setup_zsh.sh
+}
+
 init() {
     # Add 32-bit arch to dpkg
     sudo dpkg --add-architecture i386
@@ -178,4 +182,5 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 
     install_ qemu
     install_ angr
+    install_ zsh
 fi
