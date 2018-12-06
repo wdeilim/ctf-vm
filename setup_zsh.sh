@@ -24,8 +24,6 @@ else
   mv -f ~/.zshrc-omztemp ~/.zshrc
 fi
 
-# autojump
-sudo apt install autojump -y
 
 # plugins
 
@@ -48,7 +46,8 @@ fi
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
 if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
   if hash chsh >/dev/null 2>&1; then
-    chsh -s $(grep /zsh$ /etc/shells | tail -1)
+    echo "Please run bellow command to change your default sh"
+    echo "chsh -s $(grep /zsh$ /etc/shells | tail -1)"
   else
     printf "I can't change your shell automatically because this system does not have chsh.\n"
   fi
